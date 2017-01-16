@@ -69,8 +69,23 @@
         </div>
         <!-- /.container-fluid -->
     </nav>
+    
+    <!-- jQuery -->
+    <script src="vendor/jquery/jquery.min.js"></script>
 
-    <header>
+    <!--輪播-->
+    <script src="js/jquery.backstretch.min.js"></script>
+        <script type="text/javascript">
+      $(document).ready(function(){
+        $('.header').backstretch([
+           "img/head.jpg"
+         , "img/head_1.jpg"
+         , "img/head_2.jpg"
+         , "img/head_3.jpg"
+         ], {duration: 3000, fade: 750});
+      });
+    </script>
+    <header class=header>
         <div class="header-content">
             <div class="header-content-inner">
                 <h1 id="homeHeading">歡迎來到攝影世界</h1>
@@ -260,8 +275,7 @@
         </div>
     </section>
 
-    <!-- jQuery -->
-    <script src="vendor/jquery/jquery.min.js"></script>
+    
 
     <!-- Bootstrap Core JavaScript -->
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
